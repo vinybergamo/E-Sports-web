@@ -15,7 +15,7 @@ interface Game {
   };
 }
 
-function App() {
+export default function App() {
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
@@ -53,5 +53,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
